@@ -1,9 +1,8 @@
-var http = require('http');
-var fs = require('fs');
-
+const http = require('http');
+const fs = require('fs');
 const PORT=8080; 
 
-fs.readFile('./public/index.html', function (err, html) {
+fs.readFile('./public/index.html', (err, html) => {
 
     if (err) throw err;    
 
